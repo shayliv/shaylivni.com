@@ -58,9 +58,8 @@ export default function MePage() {
                   <div className="flex flex-col items-start gap-0.5 md:gap-1 text-lg md:text-xl lg:text-xl font-heading">
                     <LetterSwapForward label="Building startups." staggerFrom="first" />
                     <LetterSwapForward label="Solving problems worth solving." staggerFrom="center" />
-                    <LetterSwapForward label="Mostly for developers." staggerFrom="last" />
                     <LetterSwapForward label="Architecture. Business. Impact." staggerFrom="first" />
-                    <LetterSwapForward label="Occasionally funny." staggerFrom="center" />
+                    <LetterSwapForward label="Tech, Tech, Tech." staggerFrom="center" />
                   </div>
                 </div>
 
