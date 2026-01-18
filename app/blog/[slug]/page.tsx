@@ -2,6 +2,8 @@ import { Header } from "@/components/header"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import { ArchitectureArticleContent } from "@/components/blog-article-content"
+import { NewsletterPopup } from "@/components/newsletter-popup"
+import { NewsletterSection } from "@/components/newsletter-section"
 
 const blogPosts: Record<string, { title: string; description: string; date: string; content: string; useRichContent?: boolean }> = {
   "make-architecture-context-queryable": {
@@ -31,6 +33,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   return (
     <main className="min-h-screen bg-background">
       <Header />
+      <NewsletterPopup />
 
       <article className="container mx-auto px-4 py-12 max-w-3xl">
         <Link
@@ -59,6 +62,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           )}
         </div>
       </article>
+
+      <NewsletterSection />
     </main>
   )
 }

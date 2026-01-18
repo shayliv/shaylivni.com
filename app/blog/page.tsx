@@ -1,4 +1,5 @@
 import { Header } from "@/components/header"
+import { NewsletterPopup } from "@/components/newsletter-popup"
 import Link from "next/link"
 
 const blogPosts = [
@@ -15,6 +16,7 @@ export default function BlogPage() {
   return (
     <main className="min-h-screen bg-background">
       <Header />
+      <NewsletterPopup />
 
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-6xl md:text-8xl font-heading font-bold uppercase mb-12">Blog</h1>
